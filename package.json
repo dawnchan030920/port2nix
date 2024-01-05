@@ -1,0 +1,8 @@
+{
+  "name": "port2nix",
+  "version": "0.1.0",
+  "description": "Toolbox for porting configs from other languages to nix.",
+  "scripts": {},
+  "author": "Dawn Chan",
+  "license": "MIT"
+}

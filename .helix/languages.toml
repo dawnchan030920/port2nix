@@ -1,0 +1,7 @@
+[language-server.emmet-ls]
+args = ["--stdio"]
+command = "emmet-ls"
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "emmet-ls"]
