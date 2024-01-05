@@ -15,7 +15,6 @@
           buildInputs = with pkgs; [
             nodejs_21
             nodePackages.typescript-language-server
-            nodePackages.http-server
             vscode-langservers-extracted
             nil
             marksman
