@@ -8,7 +8,6 @@ const configLangSelectChanges = fromEvent<ConfigLangSelectElementChangeEvent>(co
 configLangSelectChanges
   .pipe(
     map(event => event.target.value),
-    startWith(configLangSelectElement.value),
     map(value => ConfigLangValueType[value])
   )
   .subscribe(ConfigLanguage);
