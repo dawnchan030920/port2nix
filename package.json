@@ -10,6 +10,15 @@
   "author": "Dawn Chan",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.1.1",
+    "typescript": "^5.3.3",
     "vite": "^5.0.11"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
   }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
@@ -7,14 +7,26 @@
   <link rel="stylesheet" media="(prefers-color-scheme:dark)"
     href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/dark.css"
     onload="document.documentElement.classList.add('sl-theme-dark');" />
-
 </head>
 
 <body>
-  <sl-button size="small">Click Me</sl-button>
-
+  <header id="header"></header>
+  <main id="main">
+    <div id="input">
+      <div id="title"></div>
+      <div id="config-lang-container">
+        <sl-select id="config-lang-select">
+          <sl-option value="json">JSON</sl-option>
+          <sl-option value="yaml">YAML</sl-option>
+          <sl-option value="toml">TOML</sl-option>
+        </sl-select>
+      </div>
+    </div>
+    <div id="output"></div>
+  </main>
   <script type="module"
     src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  <script type="module" src="src/index.ts"></script>
 </body>
 
 </html>
