@@ -1,5 +1,5 @@
-import { fromEvent, map, startWith } from "rxjs";
-import { configLangSelectElement } from "../viewContract/domUtil";
+import { fromEvent, map } from "rxjs";
+import { configLangSelectElement } from "../viewContract/dom";
 import { ConfigLangValueType, ConfigLangSelectElementChangeEvent } from "../viewContract/contracts";
 import { ConfigLanguage } from "../model";
 

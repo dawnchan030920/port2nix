@@ -1,15 +1,7 @@
 import { ConfigLanguageType } from "../model";
+import { flipRecord } from "../util/flipRecord";
 
 type ConfigLangValues = "json" | "yaml" | "toml";
-
-function flipRecord<K extends keyof any, V extends keyof any>(record: Record<K, V>): Record<V, K> {
-  const flipped: Record<V, K> = {} as Record<V, K>;
-  for (const key in record) {
-    const value = record[key];
-    flipped[value] = key as K;
-  }
-  return flipped;
-}
 
 const ConfigLangTypeValue: Record<ConfigLanguageType, ConfigLangValues> = {
   "Json": "json",

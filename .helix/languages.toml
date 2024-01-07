@@ -17,6 +17,10 @@ validate = "on"
 experimental = {}
 problems = { shortenToSingleLine = false }
 
+[language-server.eslint.config.codeAction]
+disableRuleComment = { enable = true, location = "separateLine" }
+showDocumentation = { enable = false }
+
 [language-server.vscode-json-language-server.config]
 json = { validate = { enable = true }, format = { enable = true } }
 provideFormatter = true
