@@ -9,3 +9,10 @@
 - [ ] toml
 - [ ] yaml
 - [ ] json
+
+## Development
+
+1. Ensure `nix` is installed and `flakes`, `nix-command` are enabled.
+2. `nix develop`
+3. `npm install`
+4. `npm run dev` to run dev server.
